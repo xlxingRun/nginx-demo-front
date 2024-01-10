@@ -1,6 +1,23 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import axios from "axios";
+
+
+// 不跨域
+axios.get("/api/hello")
+    .then(function (response) {
+      console.log(response)
+    })
+
+
+// 跨域访问后端项目
+axios.get("http://www.xingxiaolin.cn/hello")
+    .then(function (response) {
+      console.log(response)
+    })
+
+
 </script>
 
 <template>

@@ -5,20 +5,6 @@ import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
-import axios from "axios";
-
-// 不跨域
-axios.get("/api/hello")
-    .then(function (response) {
-      console.log(response)
-    })
-
-
-// 跨域访问后端项目
-axios.get("http://localhost:9000/hello/world")
-    .then(function (response) {
-      console.log(response)
-    })
 
 </script>
 
